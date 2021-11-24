@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>mpm_helpdesc</name>
+    <displayName><![CDATA[MyPrestaReviews - Product Reviews + Tickets + Reminders + Rich Snippets]]></displayName>
+    <version><![CDATA[2.0.0]]></version>
+    <description><![CDATA[Product Reviews + Tickets + Reminders + Rich Snippets]]></description>
+    <author><![CDATA[MyPrestaModules]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

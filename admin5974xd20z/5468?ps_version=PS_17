@@ -1,0 +1,594 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"       lang="en-us" ><![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8 ie7"       lang="en-us" ><![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 ie8"       lang="en-us" ><![endif]-->
+<!--[if gt IE 8]>
+<html class="no-js ie9"  lang="en-us"
+      ><![endif]-->
+<html lang="en-us">
+<head>
+    <meta charset="utf-8"/>
+    <title>Authentication</title>
+            <meta name="generator" content="PrestaShop"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://myprestamodules.com/img/favicon.ico"/>
+    <link rel="icon" type="image/png" href="https://myprestamodules.com/themes/default-bootstrap/img/favicon_32_32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="https://myprestamodules.com/themes/default-bootstrap/img/favicon_16_16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://myprestamodules.com/img/favicon.ico"/>
+
+
+
+            
+                              <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&amp;display=swap" type="text/css" media="all"/>
+                    
+                              <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" type="text/css" media="all"/>
+                    
+                              <link rel="stylesheet" href="https://myprestamodules.com/themes/default-bootstrap/cache/v_2317_e800f956ab307c5c8e1734ad5167203a_all.css" type="text/css" media="all"/>
+                            
+    
+    <!--[if IE 8]>
+    
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="module-authentication-display"        class="module-authentication-display show-left-column show-right-column lang_en">
+<div id="page">
+    <div class="header-container">
+        
+        <header id="header">
+                                                                <div class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <nav><!-- Block languages module -->
+<!-- /Block languages module -->
+</nav>
+                        </div>
+                    </div>
+                </div>
+                        <div>
+                <div class="container">
+                    <div class="row" id="header_row">
+
+
+
+
+
+
+                        <nav id="header_nav_container">
+          <a class="logo lazy" href="https://myprestamodules.com/" data-bg="https://myprestamodules.com/themes/default-bootstrap/img/myprestamodules_logo.svg"></a>
+      <div class="header-nav-parent-element expandable">
+    <a href="https://myprestamodules.com/prestashop-modules/">
+        Modules
+      <div class="line"></div>
+    </a>
+    <ul class="level-depth-1">
+      <div class="menu_block">
+          <div class="left_column">
+  <div class="title">
+    First Visit?
+  </div>
+  <a href="#">New Products Release</a>
+  <a href="#">Bestsellers</a>
+  <a href="#">Featured Products</a>
+</div>
+          <div class="center_column"><div class="title">PrestaShop Modules Categories</div><div class="column"><li><a href="https://myprestamodules.com/product-page/" class="sub_item item-product_page">Product page</a></li><li><a href="https://myprestamodules.com/advertising-marketing/" class="sub_item item-advertising_and_marketing">Advertising & Marketing</a></li><li><a href="https://myprestamodules.com/blog-platforms/" class="sub_item item-blog_platforms">Blog Platforms</a></li></div><div class="column"><li><a href="https://myprestamodules.com/design-navigation/" class="sub_item item-design__and_navigation">Design  & Navigation</a></li><li><a href="https://myprestamodules.com/content-management/" class="sub_item item-content_management">Content Management</a></li><li><a href="https://myprestamodules.com/sliders/" class="sub_item item-sliders">Sliders</a></li></div><div class="column"><li><a href="https://myprestamodules.com/administration-services/" class="sub_item item-administration_services">Administration services</a></li><li><a href="https://myprestamodules.com/virtual-products/" class="sub_item item-virtual_products">Virtual products</a></li></div></div>
+          <div class="right_column">
+  <a href="https://myprestamodules.com/prestashop-modules/">Check All Categories</a>
+</div>
+      </div>
+    </ul>
+  </div>
+  <div class="header-nav-parent-element expandable">
+    <a href="https://myprestamodules.com/prestashop-themes/">
+        Themes
+      <div class="line"></div>
+    </a>
+    <ul class="level-depth-1">
+      <div class="menu_block">
+          <div class="left_column">
+  <div class="title">
+    First Visit?
+  </div>
+  <a href="#">New Products Release</a>
+  <a href="#">Bestsellers</a>
+  <a href="#">Featured Products</a>
+</div>
+          <div class="center_column"><div class="title">PrestaShop Themes Categories</div><div class="column"><li><a href="https://myprestamodules.com/fashion-shoes/" class="sub_item item-fashion_and_shoes">Fashion & Shoes</a></li><li><a href="https://myprestamodules.com/electronics-computers/" class="sub_item item-electronics_and_computers">Electronics & Computers</a></li><li><a href="https://myprestamodules.com/food-restaurant/" class="sub_item item-food_and_restaurant">Food & Restaurant</a></li></div></div>
+          <div class="right_column">
+  <a href="https://myprestamodules.com/prestashop-themes/">Check All Categories</a>
+</div>
+      </div>
+    </ul>
+  </div>
+  <div class="header-nav-parent-element expandable">
+    <a href="https://myprestamodules.com/services/">
+        Services
+      <div class="line"></div>
+    </a>
+    <ul class="level-depth-1">
+      <div class="menu_block">
+          <div class="left_column">
+  <div class="title">
+    First Visit?
+  </div>
+  <a href="#">New Products Release</a>
+  <a href="#">Bestsellers</a>
+  <a href="#">Featured Products</a>
+</div>
+          <div class="center_column"><div class="title">PrestaShop Services</div><div class="column"><li><a href="https://myprestamodules.com/user-guide/" class="sub_item item-user_guide">User Guide</a></li><li><a href="https://myprestamodules.com/support-service/" class="sub_item item-support">Support</a></li><li><a href="https://myprestamodules.com/graphics-for-sales/" class="sub_item item-graphics_for_sales">Graphics for Sales</a></li></div><div class="column"><li><a href="https://myprestamodules.com/store-optimization/" class="sub_item item-store_optimization">Store Optimization</a></li><li><a href="https://myprestamodules.com/support-assistance/" class="sub_item item-support_and_assistance">Support & Assistance</a></li></div></div>
+          <div class="right_column">
+  <a href="https://myprestamodules.com/services/">Check All Categories</a>
+</div>
+      </div>
+    </ul>
+  </div>
+  <div class="header-nav-parent-element expandable">
+    <a href="https://myprestamodules.com/free/">
+        Free Addons
+      <div class="line"></div>
+    </a>
+    <ul class="level-depth-1">
+      <div class="menu_block">
+          <div class="left_column">
+  <div class="title">
+    First Visit?
+  </div>
+  <a href="#">New Products Release</a>
+  <a href="#">Bestsellers</a>
+  <a href="#">Featured Products</a>
+</div>
+          <div class="center_column"><div class="title">PrestaShop Free Addons Categories</div><div class="column"><li><a href="https://myprestamodules.com/free-modules/" class="sub_item item-free_prestashop_modules">Free PrestaShop Modules</a></li><li><a href="https://myprestamodules.com/free-themes/" class="sub_item item-free_prestashop_themes">Free PrestaShop Themes</a></li></div></div>
+          <div class="right_column">
+  <a href="https://myprestamodules.com/free/">Check All Categories</a>
+</div>
+      </div>
+    </ul>
+  </div>
+  <div class="header-nav-parent-element expandable">
+    <a href="https://myprestamodules.com/development-service.html">
+      Web-Development
+    </a>
+    <ul class="level-depth-1">
+      <div class="menu_block dev_menu">
+        <div class="left_column">
+  <div class="title">
+    First Visit?
+  </div>
+  <a href="#">New Products Release</a>
+  <a href="#">Bestsellers</a>
+  <a href="#">Featured Products</a>
+</div>
+        <div class="center_column">
+          <div class="title">PrestaShop Development</div>
+          <div class="column">
+            <li>
+              <a class="sub_item" href="https://myprestamodules.com/development-service.html">Service Overview</a>
+            </li>
+            <li>
+              <a class="sub_item" href="https://myprestamodules.com/prestashop-development.html">PrestaShop Development</a>
+            </li>
+            <li>
+              <a class="sub_item" href="https://myprestamodules.com/prestashop-theme-creation.html">PrestaShop Theme Creation</a>
+            </li>
+          </div>
+          <div class="column">
+            <li>
+              <a class="sub_item" href="https://myprestamodules.com/prestashop-customization-service.html">PresetaShop Customization &amp; Support</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <div class="header-nav-parent-element about">
+    <div class="title">
+        About
+    </div>
+    <ul class="sub_menu">
+      <li><a href="https://myprestamodules.com/forum/">Forum</a></li>
+      <li><a href="https://myprestamodules.com/faqs/">FAQ’s</a></li>
+      <li><a href="https://myprestamodules.com/blog/">Blog</a></li>
+      <li><a href="https://myprestamodules.com/about-us">About Us</a></li>
+      <li><a href="https://myprestamodules.com/contact-us">Contacts</a></li>
+    </ul>
+  </div>
+
+</nav>
+<div class="header-nav-parent-element" id="header_get_ps_link"><a
+    href="https://myprestamodules.com/get-prestashop">Get PrestaShop</a></div>
+<nav id="header_nav_container_mobile">
+  <div onclick="" id="header_nav_container_mobile_open_btn"></div>
+  <div id="header_nav_container_mobile_expanded_menu">
+    <div class="top">
+                  <div class="menu_logo lazy" data-bg="https://myprestamodules.com/themes/default-bootstrap/img/myprestamodules_logo.svg"></div>
+              <div onclick="" id="close_header_nav_container_mobile"><i class="mf-cancel"></i></div>
+    </div>
+    <div class="menu">
+      <div class="title">
+          Our Products
+      </div>
+      <ul class="main_menu">
+        <li class="menu_item">
+          <a href="https://myprestamodules.com/prestashop-modules/"> Modules</a>
+        </li>
+        <li class="menu_item">
+          <a href="https://myprestamodules.com/prestashop-themes/"> Themes</a>
+        </li>
+        <li class="menu_item">
+          <a href="https://myprestamodules.com/services/"> Services</a>
+        </li>
+        <li class="menu_item">
+          <a href="https://myprestamodules.com/free/"> Free Addons</a>
+        </li>
+        <li class="menu_item">
+          <a href="https://myprestamodules.com/deals/"> Deals</a>
+        </li>
+      </ul>
+      <ul class="sub_menu">
+        <li><a href="https://myprestamodules.com/forum/">Forum</a></li>
+        <li><a href="https://myprestamodules.com/faqs/">FAQ’s</a></li>
+        <li><a href="https://myprestamodules.com/blog/">Blog</a></li>
+        <li><a href="https://myprestamodules.com/about-us">About Us</a></li>
+        <li><a href="https://myprestamodules.com/contact-us">Contacts</a></li>
+      </ul>
+      <a class="mobile_ps_link" href="https://myprestamodules.com/get-prestashop">Get PrestaShop</a>
+      <a href="https://myprestamodules.com/authentication" title="View my customer account" class="mobile_account" rel="nofollow">My Account</a>
+    </div>
+  </div>
+</nav>
+  <a class="mobile_logo lazy" href="https://myprestamodules.com/" data-bg="https://myprestamodules.com/themes/default-bootstrap/img/myprestamodules_logo.svg"></a>
+<!-- Block currencies module -->
+	<div id="currencies-block-top">
+		<form id="setCurrency" action="/authentication" method="post">
+			<div class="current">
+				<input type="hidden" name="id_currency" id="id_currency" value=""/>
+				<input type="hidden" name="SubmitCurrency" value="" />
+															<span id="selected_currency_sign">
+							€
+						</span>
+																					</div>
+			<ul id="first-currencies" class="currencies_ul">
+																									<li class="selected">
+						<a href="javascript:setCurrency(2);" rel="nofollow" title="€">
+							<span class="currency-iso">€</span>Euro
+						</a>
+					</li>
+																									<li >
+						<a href="javascript:setCurrency(3);" rel="nofollow" title="$">
+							<span class="currency-iso">$</span>US Dollar
+						</a>
+					</li>
+							</ul>
+		</form>
+	</div>
+<!-- /Block currencies module -->
+<!-- Block search module TOP -->
+<div id="search_block_top" class="clearfix">
+	<div class="pre_search"></div>
+	<form id="searchbox" method="get" action="//myprestamodules.com/search" >
+		<input type="hidden" name="controller" value="search" />
+		<input type="hidden" name="orderby" value="position" />
+		<input type="hidden" name="orderway" value="desc" />
+		<input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Type to search" value="" />
+
+
+
+	</form>
+</div>
+<!-- /Block search module TOP --><!-- MODULE Block cart -->
+<div class="shopping_cart_block clearfix">
+	<div class="shopping_cart">
+		<a href="https://myprestamodules.com/quick-order" title="View my shopping cart" rel="nofollow">
+			<span class="ajax_cart_icon"></span>
+			<span class="ajax_cart_quantity unvisible">0</span>
+			<span class="ajax_cart_total unvisible">
+							</span>
+					</a>
+					<div class="cart_block block exclusive">
+				<div class="block_content">
+					<!-- block list of products -->
+					<div class="cart_block_list">
+												<p class="cart_block_no_products">
+							No products
+						</p>
+												<div class="cart-prices">
+																					<div class="cart-prices-line last-line">
+								<span class="total_title">Total:</span>
+								<span class="price cart_block_total ajax_block_cart_total">0,00 €</span>
+							</div>
+														<p class="cart-buttons">
+								<a id="button_order_cart" class="" href="https://myprestamodules.com/quick-order" title="Check out" rel="nofollow">
+								<span>
+									Proceed to Checkout
+								</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- .cart_block -->
+			</div>
+</div>
+
+
+<!-- /MODULE Block cart -->
+<!-- Block user information module NAV  -->
+<div class="header_user_info">
+      <a class="login" href="https://myprestamodules.com/authentication" rel="nofollow" title="Log in to your customer account">
+        <span>My Account</span>
+    </a>
+  </div>
+<!-- /Block usmodule NAV -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="columns-container">
+        <div id="columns" class="container">
+                            <!-- Breadcrumb -->
+	<div class="breadcrumb clearfix" itemscope itemtype="http://schema.org/BreadcrumbList">
+		<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="home" itemprop="item" href="https://myprestamodules.com/" title="Return to Home"><span itemprop="name">Home</span><meta itemprop="position" content="1" ></a></span>
+					<span class="navigation-pipe"></span>
+							<!-- <span class="navigation_page"> -->Authentication<!-- </span> -->
+						</div>
+<!-- /Breadcrumb -->
+
+                        
+            <div class="row">
+                
+                                                <div id="center_column" class="center_column col-xs-12 col-sm-12">
+                    <div id="authentication_container">
+  <div class="authentication-content-block login_block">
+    <div class="title">I am a returning customer</div>
+    <div class="content">
+      <div class="authentication-input-group">
+        <label for="login_email">Email address *</label>
+        <i class="mf-email"></i>
+        <input type="text" name="email" id="login_email">
+      </div>
+      <div class="authentication-input-group">
+        <label for="login_password">Password *</label>
+        <i class="mf-key"></i>
+        <input type="password" name="password" id="login_password">
+        <div class="forgot" >
+            Forgot your password?
+        </div>
+      </div>
+
+      <button class="login">Login</button>
+      <div class="btn-label">Not yet registered?</div>
+      <button class="show-signup-page">Create account</button>
+    </div>
+  </div>
+
+  <div class="authentication-content-block registration_block">
+    <div class="title">Create Account</div>
+    <div class="content">
+      <div class="authentication-input-group">
+        <label for="full_name">Full Name *</label>
+        <i class="mf-user"></i>
+        <input type="text" name="full_name" id="full_name">
+      </div>
+
+      <div class="authentication-input-group">
+        <label for="signup_email">Your Email *</label>
+        <i class="mf-email"></i>
+        <input type="text" name="email" id="signup_email">
+      </div>
+
+      <div class="authentication-input-group">
+        <label for="id_country">Country *</label>
+        <i class="mf-map"></i>
+        <div class="mpm-select-wrapper">
+          <select name="id_country" id="id_country">
+              <option value="231">Afghanistan</option><option value="244">&Aring;land Islands</option><option value="230">Albania</option><option value="38">Algeria</option><option value="39">American Samoa</option><option value="40">Andorra</option><option value="41">Angola</option><option value="42">Anguilla</option><option value="232">Antarctica</option><option value="43">Antigua and Barbuda</option><option value="44">Argentina</option><option value="45">Armenia</option><option value="46">Aruba</option><option value="24">Australia</option><option value="2">Austria</option><option value="47">Azerbaijan</option><option value="48">Bahamas</option><option value="49">Bahrain</option><option value="50">Bangladesh</option><option value="51">Barbados</option><option value="52">Belarus</option><option value="3">Belgium</option><option value="53">Belize</option><option value="54">Benin</option><option value="55">Bermuda</option><option value="56">Bhutan</option><option value="34">Bolivia</option><option value="233">Bosnia and Herzegovina</option><option value="57">Botswana</option><option value="234">Bouvet Island</option><option value="58">Brazil</option><option value="235">British Indian Ocean Territory</option><option value="59">Brunei</option><option value="236">Bulgaria</option><option value="60">Burkina Faso</option><option value="61">Burma (Myanmar)</option><option value="62">Burundi</option><option value="63">Cambodia</option><option value="64">Cameroon</option><option value="4">Canada</option><option value="65">Cape Verde</option><option value="237">Cayman Islands</option><option value="66">Central African Republic</option><option value="67">Chad</option><option value="68">Chile</option><option value="5">China</option><option value="238">Christmas Island</option><option value="239">Cocos (Keeling) Islands</option><option value="69">Colombia</option><option value="70">Comoros</option><option value="71">Congo, Dem. Republic</option><option value="72">Congo, Republic</option><option value="240">Cook Islands</option><option value="73">Costa Rica</option><option value="74">Croatia</option><option value="75">Cuba</option><option value="76">Cyprus</option><option value="16">Czech Republic</option><option value="20">Denmark</option><option value="77">Djibouti</option><option value="78">Dominica</option><option value="79">Dominican Republic</option><option value="80">East Timor</option><option value="81">Ecuador</option><option value="82">Egypt</option><option value="83">El Salvador</option><option value="84">Equatorial Guinea</option><option value="85">Eritrea</option><option value="86">Estonia</option><option value="87">Ethiopia</option><option value="88">Falkland Islands</option><option value="89">Faroe Islands</option><option value="90">Fiji</option><option value="7">Finland</option><option value="8">France</option><option value="241">French Guiana</option><option value="242">French Polynesia</option><option value="243">French Southern Territories</option><option value="91">Gabon</option><option value="92">Gambia</option><option value="93">Georgia</option><option value="1">Germany</option><option value="94">Ghana</option><option value="97">Gibraltar</option><option value="9">Greece</option><option value="96">Greenland</option><option value="95">Grenada</option><option value="98">Guadeloupe</option><option value="99">Guam</option><option value="100">Guatemala</option><option value="101">Guernsey</option><option value="102">Guinea</option><option value="103">Guinea-Bissau</option><option value="104">Guyana</option><option value="105">Haiti</option><option value="106">Heard Island and McDonald Islands</option><option value="108">Honduras</option><option value="22">HongKong</option><option value="143">Hungary</option><option value="109">Iceland</option><option value="110">India</option><option value="111">Indonesia</option><option value="112">Iran</option><option value="113">Iraq</option><option value="26">Ireland</option><option value="29">Israel</option><option value="10">Italy</option><option value="32">Ivory Coast</option><option value="115">Jamaica</option><option value="11">Japan</option><option value="116">Jersey</option><option value="117">Jordan</option><option value="118">Kazakhstan</option><option value="119">Kenya</option><option value="120">Kiribati</option><option value="121">Korea, Dem. Republic of</option><option value="122">Kuwait</option><option value="123">Kyrgyzstan</option><option value="124">Laos</option><option value="125">Latvia</option><option value="126">Lebanon</option><option value="127">Lesotho</option><option value="128">Liberia</option><option value="129">Libya</option><option value="130">Liechtenstein</option><option value="131">Lithuania</option><option value="12">Luxemburg</option><option value="132">Macau</option><option value="133">Macedonia</option><option value="134">Madagascar</option><option value="135">Malawi</option><option value="136">Malaysia</option><option value="137">Maldives</option><option value="138">Mali</option><option value="139">Malta</option><option value="114">Man Island</option><option value="140">Marshall Islands</option><option value="141">Martinique</option><option value="142">Mauritania</option><option value="35">Mauritius</option><option value="144">Mayotte</option><option value="145">Mexico</option><option value="146">Micronesia</option><option value="147">Moldova</option><option value="148">Monaco</option><option value="149">Mongolia</option><option value="150">Montenegro</option><option value="151">Montserrat</option><option value="152">Morocco</option><option value="153">Mozambique</option><option value="154">Namibia</option><option value="155">Nauru</option><option value="156">Nepal</option><option value="13">Netherlands</option><option value="157">Netherlands Antilles</option><option value="158">New Caledonia</option><option value="27">New Zealand</option><option value="159">Nicaragua</option><option value="160">Niger</option><option value="31">Nigeria</option><option value="161">Niue</option><option value="162">Norfolk Island</option><option value="163">Northern Mariana Islands</option><option value="23">Norway</option><option value="164">Oman</option><option value="165">Pakistan</option><option value="166">Palau</option><option value="167">Palestinian Territories</option><option value="168">Panama</option><option value="169">Papua New Guinea</option><option value="170">Paraguay</option><option value="171">Peru</option><option value="172">Philippines</option><option value="173">Pitcairn</option><option value="14">Poland</option><option value="15">Portugal</option><option value="174">Puerto Rico</option><option value="175">Qatar</option><option value="176">Reunion Island</option><option value="36">Romania</option><option value="177">Russian Federation</option><option value="178">Rwanda</option><option value="179">Saint Barthelemy</option><option value="180">Saint Kitts and Nevis</option><option value="181">Saint Lucia</option><option value="182">Saint Martin</option><option value="183">Saint Pierre and Miquelon</option><option value="184">Saint Vincent and the Grenadines</option><option value="185">Samoa</option><option value="186">San Marino</option><option value="187">S&atilde;o Tom&eacute; and Pr&iacute;ncipe</option><option value="188">Saudi Arabia</option><option value="189">Senegal</option><option value="190">Serbia</option><option value="191">Seychelles</option><option value="192">Sierra Leone</option><option value="25">Singapore</option><option value="37">Slovakia</option><option value="193">Slovenia</option><option value="194">Solomon Islands</option><option value="195">Somalia</option><option value="30">South Africa</option><option value="196">South Georgia and the South Sandwich Islands</option><option value="28">South Korea</option><option value="6">Spain</option><option value="197">Sri Lanka</option><option value="198">Sudan</option><option value="199">Suriname</option><option value="200">Svalbard and Jan Mayen</option><option value="201">Swaziland</option><option value="18">Sweden</option><option value="19">Switzerland</option><option value="202">Syria</option><option value="203">Taiwan</option><option value="204">Tajikistan</option><option value="205">Tanzania</option><option value="206">Thailand</option><option value="33">Togo</option><option value="207">Tokelau</option><option value="208">Tonga</option><option value="209">Trinidad and Tobago</option><option value="210">Tunisia</option><option value="211">Turkey</option><option value="212">Turkmenistan</option><option value="213">Turks and Caicos Islands</option><option value="214">Tuvalu</option><option value="215">Uganda</option><option value="216" selected="selected">Ukraine</option><option value="217">United Arab Emirates</option><option value="17">United Kingdom</option><option value="21">United States</option><option value="218">Uruguay</option><option value="219">Uzbekistan</option><option value="220">Vanuatu</option><option value="107">Vatican City State</option><option value="221">Venezuela</option><option value="222">Vietnam</option><option value="223">Virgin Islands (British)</option><option value="224">Virgin Islands (U.S.)</option><option value="225">Wallis and Futuna</option><option value="226">Western Sahara</option><option value="227">Yemen</option><option value="228">Zambia</option><option value="229">Zimbabwe</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="authentication-input-group">
+        <label for="signup_password">Password *</label>
+        <i class="mf-key"></i>
+        <input type="password" name="password" id="signup_password">
+      </div>
+
+      <label class="terms mpm-checkbox-wrapper" for="terms">
+        <input id="terms" type="checkbox" value="1">
+        <span class="mpm-checkbox-label">I agree with <a href="https://myprestamodules.com/terms-and-conditions-of-use" target="_blank">Terms and Conditions</a> & <a href="https://myprestamodules.com/privacy-policy" target="_blank">Privacy Policy</a></span>
+        <span class="mpm-custom-checkbox-container"></span>
+      </label>
+
+      <button class="create_account" disabled>Create my account</button>
+      <div class="btn-label">Have an account?</div>
+      <button class="show-login-page">Login</button>
+    </div>
+  </div>
+
+  <div class="authentication-content-block password_block">
+    <div class="title">Forgot Password?</div>
+    <div class="content">
+      <div class="authentication-input-group">
+        <label for="send_password_email">Please enter the email address you used to register. We will
+send you instructions for retrieving your password!</label>
+        <i class="mf-email"></i>
+        <input type="text" name="email" id="send_password_email">
+      </div>
+      <div class="authentication-input-group-msg">Instructions are successfully sent! Check your mailbox!</div>
+
+      <button class="send_password">Retrieve password</button>
+      <div class="btn-label">Have an account?</div>
+      <button class="show-login-page">Login</button>
+    </div>
+  </div>
+</div>					</div><!-- #center_column -->
+										</div><!-- .row -->
+				</div><!-- #columns -->
+				
+			</div><!-- .columns-container -->
+								<!-- Footer -->
+				<div class="footer-container">
+					<footer id="footer"  class="container">
+						<div class="row"><div class="footer_block">
+  <div class="footer_content">
+          <a class="footer_logo lazy" href="https://myprestamodules.com/" data-bg="https://myprestamodules.com/themes/default-bootstrap/img/myprestamodules_logo_white.svg"></a>
+        <div class="main_block">
+      <div class="read_more_block">
+        <div class="title">
+          Read More
+        </div>
+        <ul>
+          <li>
+            <a href="https://myprestamodules.com/about-us">About Us</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/blog/">Blog</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/privacy-policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/terms-and-conditions-of-use">Terms &amp; Use</a>
+          </li>
+        </ul>
+        <a class="dmca" target="_blank" href="http://www.dmca.com/Protection/Status.aspx?ID=9a562077-8494-47c6-bab3-f96f4ed74ea7&refurl=https://myprestamodules.com/authentication"><span>DMCA</span><span>Protected</span></a>
+      </div>
+      <div class="documentation_block">
+        <div class="title">
+          Documentation
+        </div>
+        <ul>
+          <li>
+            <a href="https://myprestamodules.com/forum/">Forum</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/faqs/">FAQ</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <div class="social">
+          <a class="facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/myprestamodules"></a>
+          <a class="youtube" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCjfnZagQb7NID3jSIDCUyeg"></a>
+        </div>
+      </div>
+      <div class="products_block">
+        <div class="title">
+          Products
+        </div>
+        <ul>
+          <li>
+            <a href="https://myprestamodules.com/prestashop-modules/"> PrestaShop Modules</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/prestashop-themes/"> PrestaShop Themes</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/services/"> Services</a>
+          </li>
+          <li>
+            <a href="https://myprestamodules.com/free/"> Free Addons</a>
+          </li>
+          <li>
+            <a href="https://myprestareviews.com/" target="_blank"> PrestaShop Reviews</a>
+          </li>
+        </ul>
+      </div>
+      <div class="questions_block">
+        <div class="title">
+          Any questions?
+          <span>Contact Us now!</span>
+        </div>
+        <a class="create_ticket" href="https://myprestamodules.com/contact-us">
+          Create Ticket
+        </a>
+        <div class="opening_hours">
+          <div class="opening_title">
+            Opening hours:
+          </div>
+          <div class="hours">
+            09:00 — 18:00 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="copyright">
+      <div class="go_top"></div>
+      © 2016-2021 <span>MyPrestaModules</span> LLC. All right reserved.
+    </div>
+  </div>
+</div>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "MyPrestaModules",
+      "url": "https://myprestamodules.com/",
+      "sameAs": [
+        "https://www.facebook.com/myprestamodules",
+        "https://www.youtube.com/channel/UCjfnZagQb7NID3jSIDCUyeg"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://myprestamodules.com/",
+            "name": "MyPrestaModules",
+            "description": "PrestaShop Modules and Themes by MyPrestaModules",
+            "logo": "https://myprestamodules.com/themes/default-bootstrap/img/logo.jpg"
+          }
+          </script>
+  <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "url": "https://myprestamodules.com/",
+              "name": "MyPrestaModules",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://myprestamodules.com/search?controller=search&orderby=position&orderway=desc&search_query={query}&submit_search=",
+                "query-input": "required name=query"
+              }
+            }
+          </script>
+<div id="cookies_consent_container">
+    <div id="cookies_consent_message">
+        Hey! Our website uses cookies to improve user experience.
+        <br>
+        By using our website you consent to all cookies in accordance with our 
+        <a href="https://myprestamodules.com/privacy-policy">Privacy Policy.</a>
+    </div>
+    <div id="cookies_consent_confirm">
+        OK, GOT IT!
+    </div>
+</div></div>
+					</footer>
+				</div>
+				<!-- #footer -->
+					</div><!-- #page -->
+
+
+		<div id="mpm_global_progress_bar"><div class="loading"><div><img src="https://myprestamodules.com/themes/default-bootstrap/img/preloader.svg" alt="Page preloader icon"></div></div></div>
+
+<script type="text/javascript">/* <![CDATA[ */;var CUSTOMIZE_TEXTFIELD=1;var FancyboxI18nClose='Close';var FancyboxI18nNext='Next';var FancyboxI18nPrev='Previous';var ajax_allowed=true;var ajaxsearch=true;var baseDir='https://myprestamodules.com/';var baseUri='https://myprestamodules.com/';var blocksearch_type='top';var contentOnly=false;var currency={"id":2,"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac","blank":"1","conversion_rate":"1.000000","deleted":"0","format":"2","decimals":"1","active":"1","prefix":"","suffix":" \u20ac","id_shop_list":null,"force_id":false};var currencyBlank=1;var currencyFormat=2;var currencyRate=1;var currencySign='€';var customizationIdMessage='Customization #';var delete_txt='Delete';var displayList=false;var freeProductTranslation='Free!';var freeShippingTranslation='Free shipping!';var generated_date=1636288103;var hasDeliveryAddress=false;var highDPI=false;var id_lang=1;var img_dir='https://myprestamodules.com/themes/default-bootstrap/img/';var instantsearch=false;var isGuest=0;var isLogged=0;var isMobile=false;var page_name='module-authentication-display';var priceDisplayMethod=0;var priceDisplayPrecision=2;var quickView=false;var removingLinkText='remove this product from my cart';var roundMode=2;var search_url='https://myprestamodules.com/search';var static_token='cf5d41525bb7a60abce169544f42cf44';var toBeDetermined='To be determined';var token='d9a5e1477ff46c6ea65be4874297b5d4';var usingSecureMode=true;/* ]]> */</script>
+<script type="text/javascript" src="https://myprestamodules.com/themes/default-bootstrap/cache/v_1917_3a7905642f72371ebbc76b6d6febaa10.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</body></html>

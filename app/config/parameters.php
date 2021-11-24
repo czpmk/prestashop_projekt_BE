@@ -14,7 +14,7 @@
     'mailer_password' => NULL,
     'secret' => 'QzwzCikTX6LB2u08819wsFU0TqV1VFcXBm1M5gWD6V67297ZSzdsVipiGvwx1ofX',
     'ps_caching' => 'CacheMemcache',
-    'ps_cache_enable' => false,
+    'ps_cache_enable' => true,
     'ps_creation_date' => '2021-10-16',
     'locale' => 'pl-PL',
     'use_debug_toolbar' => true,

@@ -1,0 +1,23 @@
+
+    .mpm_product_stars_block i{
+            color: #FDBC00;
+        font-size: 16px;
+        margin-left: 0px;
+        }
+    .mpm_product_stars_block .count_reviews
+    {
+            color: #2B323C;
+                font-family: Arial;
+            font-weight: normal;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .mpm_product_stars_block fieldset{
+        display: flex;
+    }
+    .mpm_product_stars_block .count_reviews:hover{
+        text-decoration: underline;
+    }
+    .product-miniature .mpm_product_stars_block{
+        text-align: center;
+    }

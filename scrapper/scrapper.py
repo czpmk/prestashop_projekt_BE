@@ -1,9 +1,6 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
 import requests
 from bs4 import BeautifulSoup
-from openpyxl import Workbook
+from openpyxl import Workbook,load_workbook
 from boltons.setutils import IndexedSet
 
 product_list_url = "https://light-home.pl/2-lampy?n=500"
@@ -46,7 +43,7 @@ for link in product_links:
     
     i += 1
     
-    ws['A'+str(i)] = i-1
+    ws['A'+str(i)] = i
     
     #Zdjecia
     img_links = soup2.find_all("div", class_="bigpic_item")
@@ -55,7 +52,7 @@ for link in product_links:
         tmp = img_link.find("a").get('href')
         print(tmp)
         images += tmp + ','
-    ws['C'+str(i)] = images[:len(images)-1]
+    ws['C'+str(i)] = images
     
     #Nazwa
     tmp = str(soup2.find("h1",class_="kp-prodtitle").get_text())
@@ -72,7 +69,7 @@ for link in product_links:
     tmp_str=""
     i2 = 1
     for x in tmp:
-        tmp_str+=str(x).replace(' class="odd"','').replace(' class="even"','').replace(",","/").replace("</td><td>",":").replace("</td></tr>",":"+str(i2)+",").replace("<tr><td>","").replace("<tr></tr>","")
+        tmp_str+=str(x).replace(' class="odd"','').replace(' class="even"','').replace(",","/").replace("</td><td>",":").replace("</td></tr>",":"+str(i2)+",").replace("<tr><td>","")
         i2 += 1
     print(tmp_str)
     ws['E'+str(i)] = tmp_str
@@ -108,7 +105,9 @@ for link in product_links:
     
     #Początkowy stan magazynowy
     ws['L'+str(i)] = "10"
-     
+    
+#wb.save('import_products.xlsx')
+    
 #przetworzenie kategorii do formatu importu
 wb_categories = Workbook()
 ws_categories = wb_categories.active
@@ -125,7 +124,6 @@ for category in categories:
             categories_processed.add((last_cat,x,i))
         last_cat = x
 
-categories_processed.add(("Strona główna","Sklep z lampami",0))
 print(categories_processed)
 
 categories_processed.sort(key=lambda tup: tup[2])  # sortowanie według głębokości (trzeci element tuple)
@@ -134,26 +132,27 @@ ws_categories['A1'] = "ID"
 ws_categories['B1'] = "Kategoria nadrzędna"
 ws_categories['C1'] = "Nazwa"
 
-i = 2
+ws_categories['A2'] = 3
+ws_categories['B2'] = "Kategoria główna"
+ws_categories['C2'] = "Sklep z lampami"
+
+i = 3
 for category in categories_processed:
     if category[0]=="" or category[1]=="":
         continue
-    currentRow = 1
-    for eachRow in ws.iter_rows():
-        #print("DEBUG: "+category[1])
-        #print("DEBUG: "+ws.cell(row=currentRow, column=8).value)
-        if category[1]==ws.cell(row=currentRow, column=8).value:
-            ws.cell(row=currentRow, column=8).value = str(i+1)
-        currentRow += 1
-    ws_categories['A'+str(i)] = str(i+1)
+    ws_categories['A'+str(i)] = i+1
     ws_categories['B'+str(i)] = category[0]
     ws_categories['C'+str(i)] = category[1]
     i += 1
 
 wb_categories.save("import_categories.xlsx")
 
-#Zamiana nazw kategorii na ID
 
-
-
+#zamiana kategorii w imporcie produktów na ID
+for row_cat in ws_categories.rows:
+    print(row_cat[2].value)
+    for row_prod in ws.rows:
+        if row_prod[7].value == row_cat[2].value:
+            row_prod[7].value = row_cat[0].value
+        
 wb.save("import_products.xlsx")

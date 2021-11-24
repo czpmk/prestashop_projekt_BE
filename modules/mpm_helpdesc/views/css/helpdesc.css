@@ -1,0 +1,261 @@
+@import 'style.css';
+
+.page-product-box .reviews-block{
+  position: relative;
+}
+
+@keyframes sk-bouncedelay{
+  0%, 80%, 100%{
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
+  40%{
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+.loader_block_helpdesc{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(146, 146, 146, 0.2);
+  z-index: 1;
+  display: none;
+}
+.loader_block_helpdesc .loader{
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+}
+.products_block.reviews-block {
+  position: relative;
+}
+.loader_block_helpdesc.active{
+  display: block;
+}
+.loader_block_helpdesc .loader.fade-in {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: fadeIn;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-iteration-count: 1;
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.5s;
+  -o-animation-name: fadeIn;
+  -o-animation-fill-mode: forwards;
+  -o-animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.loader_block_helpdesc .loader > div{
+  width: 18px;
+  height: 18px;
+  background-color: #ff6159;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.loader_block_helpdesc .loader .bounce1{
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader_block_helpdesc.loader .bounce2{
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.products_block.questions-block{
+  min-height: 70px;
+}
+.notification_block{
+  text-align: center;
+  padding: 50px 0px 100px 0px;
+}
+.notification_icon img{
+  max-width: 100%;
+}
+.notification_icon{
+  margin-bottom: 25px;
+}
+.notification_title{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #606060;
+  margin-bottom: 15px;
+
+}
+.notification_block.notification_block_subscribe .notification_info,
+.notification_block.notification_block_unsubscribe .notification_info{
+  max-width: 500px;
+}
+.notification_descr a{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.notification_descr{
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+  color: #606060;
+}
+.notification_message{
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+.notification_block .notification_info{
+  text-align: center;
+  padding-bottom: 60px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.notification_block.notification_block_reviews{
+  text-align: inherit !important;
+}
+
+.product-miniature .thumbnail-container:hover .highlighted-informations{
+  z-index: 10 !important;
+}
+
+ul.product_list.grid > li .product-container .product-image-container .content_price{
+  z-index: 10;
+}
+.dedicated_reviews_page{
+  display: none;
+}
+.mpm_product_stars_block.PS_17_category
+{
+  background: #FFF;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 4px 0px 6px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mpm_product_stars_block.PS_16_category
+{
+  background: #FFF;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 4px 0px 6px 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+}
+
+.mpm_reviews_count
+,.mpm_rating_count
+,.mpm_total_rating
+{
+  font-size: 14px;
+  color: #7a7a7a;
+  font-weight: normal;
+  display: inline-block;
+}
+.reviews-block-content{
+  display: none;
+}
+
+.mpm_product_stars_block .count_reviews {
+  display: block;
+}
+
+.leave_review {
+  margin: 15px 0 -10px 0;
+}
+
+.leave_review .mpm_product_stars_block {
+  display: inline-block;
+  margin: 0 7px 0 0;
+  vertical-align: -5px;
+}
+
+.leave_review .mpm_write_review {
+  margin: 7px 0 5px -1px;
+}
+
+.leave_review .reviews_count:hover{
+  text-decoration: underline;
+  color: #7a7a7a;
+}
+
+.leave_review .reviews_count{
+  cursor: pointer;
+}
+
+.myprestareviews_registration_info{
+  text-align: center;
+  color: #303030;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.myprestareviews_registration_info .review_icon{
+  margin: 0 auto;
+  display: block;
+}
+
+.myprestareviews_registration_info .welcome{
+  margin: 15px 0 15px 0;
+}
+
+.myprestareviews_registration_info .description_info .color_style{
+  color: #FD0C51;
+  font-weight: bold;
+}
+
+.myprestareviews_registration_info .bold{
+  font-weight: bold;
+}
+
+.myprestareviews_registration_info a{
+  color: #FD0C51;
+  text-decoration: underline;
+}
+
+.myprestareviews_registration_info a span{
+  text-decoration: underline;
+}
+
+.myprestareviews_registration_info a:hover
+,.myprestareviews_registration_info a span:hover
+,.myprestareviews_registration_info .video_instruction
+{
+  text-decoration: none;
+}
+
+.myprestareviews_registration_info .step{
+  margin: 0 0 5px 0;
+}
+
+.myprestareviews_registration_info .video_instruction img{
+  margin: -1px 8px 0 0;
+}
+
+.myprestareviews_registration_info .video_instruction{
+  margin: 20px 0 0 0;
+  display: block;
+}

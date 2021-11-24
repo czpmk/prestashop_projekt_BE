@@ -1,0 +1,1 @@
+<div class="footer-product-reviews">{$tpl|escape:'htmlall':'UTF-8' nofilter}</div>
